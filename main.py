@@ -1,4 +1,5 @@
-book_path = "./books/frankenstein.txt"
+import time
+book_path = "./books/the_bible_kjv.txt"
 
 def main():
     text = read_file(book_path)
@@ -56,6 +57,10 @@ def sort_dict(char_count):
             continue
     
     return sorted_dict
-  
-main()
 
+
+start = time.time()
+main()
+end = time.time()
+print(f"Parsing time: {round(time.time() - start, 3)} seconds!")
+print()
