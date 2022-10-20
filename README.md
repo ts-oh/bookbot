@@ -4,7 +4,7 @@ Bookbot is a simple command-line program that reads in text from a file, and gen
 
 ## Live Demo 🤹🏻‍♂️
 
-[Run Demo](https://replit.com/@tsoh/bookbot#main.py) - hosted on Replit.
+- [Run Demo](https://replit.com/@tsoh/bookbot#main.py) - hosted on Replit.
 
 ## Installation 💾
 
