@@ -23,7 +23,7 @@ You should see this as your output in your command line console:
 ```
 +++ Begin report of ./books/the_bible_kjv.txt +++
 
-824528 found in the document
+824528 words found in the document
 
 The 'e' character was found 412514 times
 The 't' character was found 317976 times
