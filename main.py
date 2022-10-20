@@ -10,7 +10,7 @@ def main():
     print()
     print(f"+++ Begin report of {book_path} +++")
     print()
-    print(f"{word_count} found in the document")
+    print(f"{word_count} words found in the document")
     print()
     
     for key in sorted_count:
