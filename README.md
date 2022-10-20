@@ -2,7 +2,11 @@
 
 Bookbot is a simple command-line program that reads in text from a file, and generates a statistical report about the text.
 
-## Installation 📥
+## Live Demo 🤹🏻‍♂️
+
+[Run Demo](https://replit.com/@tsoh/bookbot#main.py) - hosted on Replit.
+
+## Installation 💾
 
 In your command line clone this repo by typing:
 `git clone git@github.com:ts-oh/bookbot.git`
