@@ -1,6 +1,7 @@
 import time
 book_path = "./books/the_bible_kjv.txt"
 
+
 def main():
     text = read_file(book_path)
     word_count = count_words(text)
@@ -11,20 +12,25 @@ def main():
     print()
     print(f"{word_count} found in the document")
     print()
+    
     for key in sorted_count:
         print(f"The '{key}' character was found {sorted_count[key]} times")
+
     print()
     print(f"--- End report of {book_path} ---")
     print()
     
+
 def read_file(book_path):
     with open(book_path) as f:
         book_file = f.read()
         return book_file
 
+
 def count_words(text):
     text_list = text.split()
     return len(text_list)
+
 
 def count_character(text):
     char_dict = {}
@@ -38,6 +44,7 @@ def count_character(text):
                 char_dict[low_char] = 1
     return char_dict
 
+
 def sort_dict(char_count):
     tuple_list = list(char_count.items())
     tuple_list.sort(key=lambda c: c[1], reverse=True)
@@ -48,6 +55,7 @@ def sort_dict(char_count):
         else:
             continue
     return sorted_dict
+
 
 start = time.time()
 main()
