@@ -1,20 +1,20 @@
-# Bookbot!
+# Bookbot! 🤖
 
 Bookbot is a simple command-line program that reads in text from a file, and generates a statistical report about the text.
 
-## Installation
+## Installation 📥
 
-In your shell clone this repo by typing:
-
+In your command line clone this repo by typing:
 `git clone git@github.com:ts-oh/bookbot.git`
 
-Once it is cloned, run the script in the root bookbot directory by typing :
+## Run 🏃🏻‍♂️
 
-`python main.py`
+1. cd into the bookbot directory: `cd bookbot`
+2. Run the script by typing: `python main.py`
 
-## Report
+## Output 📄
 
-You should see this as your output in your cli:
+You should see this as your output in your command line console:
 
 ```
 +++ Begin report of ./books/the_bible_kjv.txt +++
@@ -53,12 +53,12 @@ The 'q' character was found 964 times
 Parsing time: 0.463 seconds!
 ```
 
-## Options
+## Options 📚
 
 You can use your own text file to parse using the book bot. Simply copy your text file inside the `./books` directory.
 
 Open main.py in your editor and assign the `book_path` variable with your text file `"./books/YOUR_TEXT_FILE.txt"`
 
-`book_path = "./books/YOUR_TEXT_FILE.txt"`
+It should look like this `book_path = "./books/YOUR_TEXT_FILE.txt"`
 
-Save it and run the script as indicated in the installation section.
+Once it's assigned, save it and run the script as instructed in installation section.
