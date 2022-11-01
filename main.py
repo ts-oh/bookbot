@@ -1,5 +1,5 @@
 import time
-book_path = "./books/the_bible_kjv.txt"
+book_path = "./books/swanns_way.txt"
 
 
 def main():
