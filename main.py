@@ -9,7 +9,7 @@ def main():
         with open(book_path) as f:
             text = f.read()
     except:
-        print('not found')
+        print('File not found, please check the filename!')
         main()
 
     word_count = count_words(text)
