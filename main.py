@@ -1,16 +1,25 @@
 import time
-book_path = "./books/swanns_way.txt"
-
 
 def main():
-    text = read_file(book_path)
+    book_path = get_book_path()
+    text = None
+    start = time.time()
+
+    try:
+        with open(book_path) as f:
+            text = f.read()
+    except:
+        print('not found')
+        main()
+
     word_count = count_words(text)
     char_count = count_character(text)
     sorted_count = sort_dict(char_count)
+    
     print()
     print(f"+++ Begin report of {book_path} +++")
     print()
-    print(f"{word_count} words found in the document")
+    print(f"{word_count} words found in the text file")
     print()
     
     for key in sorted_count:
@@ -19,12 +28,28 @@ def main():
     print()
     print(f"--- End report of {book_path} ---")
     print()
+    end = time.time()
+    print(f"Parsing time: {round(end - start, 3)} seconds!")
     
+    parse_again()
+ 
 
-def read_file(book_path):
-    with open(book_path) as f:
-        book_file = f.read()
-        return book_file
+def get_book_path():
+        file_name = input("Please enter the file name you like to parse (e.g.'mytext.txt'):")
+        book_path = f'./books/{file_name}'
+        return book_path 
+
+
+def parse_again():
+    prompt = input("Parse another file? 'y'[yes] or 'n'[no] :")
+    if prompt == 'y':
+        return main()
+    elif prompt == 'n':
+        print()
+        print('Good Bye!')
+        return print()
+    else:
+        parse_again()
 
 
 def count_words(text):
@@ -57,8 +82,4 @@ def sort_dict(char_count):
     return sorted_dict
 
 
-start = time.time()
 main()
-end = time.time()
-print(f"Parsing time: {round(time.time() - start, 3)} seconds!")
-print()
