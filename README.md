@@ -112,8 +112,11 @@ Parsing time: 0.075 seconds!
 
 You can use your own text file to parse using the book bot. Simply copy your text file inside the `./books` directory.
 
-Open main.py in your editor and assign the `book_path` variable with your text file `"./books/YOUR_TEXT_FILE.txt"`
+<s>Open main.py in your editor and assign the `book_path` variable with your text file `"./books/YOUR_TEXT_FILE.txt"`
 
 It should look like this `book_path = "./books/YOUR_TEXT_FILE.txt"`
 
-Once it's assigned, save it and run the script as instructed in installation section.
+Once it's assigned, save it and run the script as instructed in installation section.</s>
+
+**Update:** Now it will prompt you to type out the name of the text file that you would like
+to parse. Just simply keep your text files in the `./books` directory like before.
