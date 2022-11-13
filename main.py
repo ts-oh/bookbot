@@ -16,23 +16,17 @@ def main():
     char_count = count_character(text)
     sorted_count = sort_dict(char_count)
     
-    print()
-    print(f"+++ Begin report of {book_path} +++")
-    print()
-    print(f"{word_count} words found in the text file")
-    print()
+    print(f"\n+++ Begin report of {book_path} +++\n")
+    print(f"{word_count} words found in the text file\n")
     
     for key in sorted_count:
         print(f"The '{key}' character was found {sorted_count[key]} times")
 
-    print()
-    print(f"--- End report of {book_path} ---")
-    print()
+    print(f"\n--- End report of {book_path} ---\n")
     end = time.time()
-    print(f"Parsing time: {round(end - start, 3)} seconds!")
-    
+    print(f"Parsing time: {round(end - start, 3)} seconds!\n")
     parse_again()
- 
+
 
 def get_book_path():
         file_name = input("Please enter the file name you like to parse (e.g.'mytext.txt'):")
@@ -41,16 +35,17 @@ def get_book_path():
 
 
 def parse_again():
-    prompt = input("Parse another file? 'y'[yes] or 'n'[no] :")
-    if prompt == 'y':
-        return main()
-    elif prompt == 'n':
-        print()
-        print('Good Bye!')
-        return print()
-    else:
-        parse_again()
-
+    valid_prompt = False
+    while not valid_prompt:
+        prompt = input("Parse another file? 'y'[yes] or 'n'[no] :")
+        if prompt == 'y':
+            valid_prompt = True
+            return main()
+        elif prompt == 'n':
+            valid_prompt = True    
+            print('\nGood Bye!\n')
+            return False
+    return
 
 def count_words(text):
     text_list = text.split()
