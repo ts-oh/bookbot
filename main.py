@@ -1,17 +1,17 @@
-import time
 import cli_display
 import parse
+import time
 
 def parse_again():
     valid_prompt = False
     while not valid_prompt:
-        prompt = input("Parse another file? 'y'[yes] or 'n'[no] :")
+        prompt = input("♻️ Parse another file? 'y'[yes] or 'n'[no] :")
         if prompt == 'y':
             valid_prompt = True
             return main()
         elif prompt == 'n':
             valid_prompt = True    
-            print('\nGood Bye!\n')
+            print('\n😎 Good Bye!\n')
             return False
     return
 
@@ -27,7 +27,7 @@ def main():
         with open(book_path) as f:
             text = f.read()
     except:
-        print('File not found, please check the filename!')
+        print('⚠️ File not found, please check the filename!')
         main()
 
     word_count = parse.count_words(text)
@@ -42,7 +42,7 @@ def main():
 
     print(f"\n--- End report of {book_path} ---\n")
     end = time.time()
-    print(f"Parsing time: {round(end - start, 3)} seconds!\n")
+    print(f"⏱️ Parsing time: {round(end - start, 3)} seconds!\n")
     parse_again()
 
 

@@ -50,69 +50,19 @@ The 'x' character was found 562 times
 The 'j' character was found 549 times
 The 'q' character was found 299 times
 The 'z' character was found 152 times
-The 'ο' character was found 42 times
-The 'ν' character was found 37 times
-The 'τ' character was found 31 times
-The 'α' character was found 29 times
-The 'σ' character was found 26 times
-The 'ρ' character was found 25 times
-The 'π' character was found 23 times
-The 'έ' character was found 19 times
-The 'ε' character was found 19 times
-The 'ι' character was found 18 times
-The 'δ' character was found 15 times
-The 'λ' character was found 15 times
-The 'ς' character was found 12 times
-The 'μ' character was found 11 times
-The 'κ' character was found 9 times
-The 'η' character was found 8 times
-The 'γ' character was found 8 times
-The 'θ' character was found 7 times
-The 'ό' character was found 7 times
-The 'ί' character was found 7 times
-The 'ὶ' character was found 7 times
-The 'φ' character was found 6 times
-The 'ὄ' character was found 6 times
-The 'ἀ' character was found 6 times
-The 'ἐ' character was found 5 times
-The 'ω' character was found 5 times
-The 'ἰ' character was found 5 times
-The 'υ' character was found 4 times
-The 'ὼ' character was found 4 times
-The 'χ' character was found 3 times
-The 'ύ' character was found 3 times
-The 'æ' character was found 3 times
-The 'ῖ' character was found 3 times
-The 'ῥ' character was found 3 times
-The 'ῇ' character was found 3 times
-The 'ῳ' character was found 2 times
-The 'ῶ' character was found 2 times
-The 'ά' character was found 2 times
-The 'ἦ' character was found 2 times
-The 'ὦ' character was found 2 times
-The 'ἄ' character was found 2 times
-The 'ἔ' character was found 2 times
-The 'ζ' character was found 2 times
-The 'ὺ' character was found 2 times
-The 'ή' character was found 2 times
-The 'ù' character was found 2 times
-The 'ὀ' character was found 2 times
-The 'ῆ' character was found 1 times
-The 'ώ' character was found 1 times
-The 'ὡ' character was found 1 times
-The 'ἷ' character was found 1 times
-The 'ἠ' character was found 1 times
+
+and so on...
 
 --- End report of ./books/the_odyssey.txt ---
 
-Parsing time: 0.075 seconds!
+⏱️ Parsing time: 0.128 seconds!
 ```
 
 ## Options 📚
 
 You can use your own text file to parse using the book bot. Simply copy your text file inside the `./books` directory.
 
-**Update:** Now the program will prompt you to type out the name of the text file that you would like to parse. Just simply keep your text files in the `./books` directory like before.
+**Update:** Now the program will prompt you to type out the name of the text file that you would like to parse. Just simply keep your text files in the `./books` directory like before. Furthermore, it should list out available books in the directory for your convinience.
 
 <s>Open main.py in your editor and assign the `book_path` variable with your text file `"./books/YOUR_TEXT_FILE.txt"`
 
